@@ -1,0 +1,23 @@
+# Data Analyst Internship - Task 1: Excel Data Cleaning
+
+## Project Overview
+This project involves cleaning and standardizing the **Netflix Movies and TV Shows** dataset as part of the MSME Data Analyst Internship
+The goal was to transform "messy" raw data into a structured format ready for analysis by handling missing values, duplicates, and inconsistent formatting
+
+## Tools Used
+* **Primary Tool:** Microsoft Excel
+* **Techniques:** Filter & Sort, Conditional Formatting, Text Functions (TRIM, PROPER, UPPER) 
+
+## Data Cleaning Steps
+I followed a professional pipeline to ensure data integrity:
+
+1.**Data Preservation:** Created a backup tab and saved the original file as `Raw_Data.xlsx` before any modifications
+2. **Missing Value Management:** - Used **Filter → Blank values** to identify missing data in columns like `director` and `cast`
+   -Highlighted blanks using **Conditional Formatting**
+   - Replaced missing values with "Unknown" to preserve the records for other analytical purposes
+3. **Deduplication:** Utilized the **Remove Duplicates** feature on the `show_id` column to ensure unique records.
+4. **Text Standardization:**
+   - Applied `TRIM` to remove leading/trailing spaces
+5. **Format Validation:** Standardized the `date_added` column to a consistent date format (YYYY-MM-DD) and ensured numeric columns contained no symbols.
+6. **Documentation:** Added a `Data_Quality_Notes` column to track all modifications (e.g., "missing director names present")
+
